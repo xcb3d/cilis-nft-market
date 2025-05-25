@@ -2,13 +2,14 @@
 
 A full-featured NFT marketplace platform built with Hardhat, Solidity, React, Vite, and TailwindCSS.
 
+[Preview video](https://youtu.be/ytiG2XDrHvs)
+
 ## Features
 
 - Create, buy, sell, and trade NFTs
 - Create custom NFT collections
+- Collection statistics
 - Connect with Web3 wallets using RainbowKit and wagmi
-- Real-time marketplace updates
-- User-friendly interface with TailwindCSS
 - Fully responsive design
 - Comprehensive testing suite
 
@@ -17,7 +18,7 @@ A full-featured NFT marketplace platform built with Hardhat, Solidity, React, Vi
 
 1. Clone the repository
    ```bash
-   git clone https://github.com/yourusername/cilis-nft-market.git
+   git clone https://github.com/xcb3d/cilis-nft-market.git
    cd cilis-nft-market
    ```
 
@@ -48,7 +49,7 @@ A full-featured NFT marketplace platform built with Hardhat, Solidity, React, Vi
    npm install
    ```
 
-3. Create a `.env` file with appropriate configurations (copy from `.env.example` if available)
+3. Create a `.env` file with appropriate configurations (copy from `.env.example`)
 
 4. Start the development server
    ```bash
