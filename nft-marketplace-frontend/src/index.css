@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Poppins', system-ui, sans-serif;
+  }
+  
+  body {
+    @apply bg-dark-100 text-white;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center px-4 py-2 border border-transparent 
+           text-sm font-medium rounded-xl shadow-sm text-white 
+           bg-gradient-to-r from-neon-purple via-neon-blue to-neon-pink
+           hover:shadow-lg hover:shadow-neon-purple/50 transition-all duration-300;
+  }
+  
+  .btn-secondary {
+    @apply inline-flex items-center px-4 py-2 border border-white/10 
+           text-sm font-medium rounded-xl text-white bg-glass-card 
+           hover:bg-glass-white hover:shadow-lg hover:shadow-white/20 
+           transition-all duration-300;
+  }
+  
+  .input {
+    @apply block w-full px-4 py-3 bg-glass-card backdrop-blur-xl
+           border border-white/10 rounded-xl text-white
+           placeholder-gray-400 shadow-glass
+           focus:outline-none focus:ring-2 focus:ring-neon-purple/50
+           focus:border-neon-purple/50 transition-all duration-300
+           hover:bg-glass-white hover:shadow-lg hover:shadow-white/20;
+  }
+
+  .card {
+    @apply relative overflow-hidden rounded-2xl bg-glass-card 
+           backdrop-blur-xl border border-white/10 shadow-glass
+           hover:shadow-lg hover:shadow-white/20 transition-all duration-300
+           hover:scale-[1.02];
+  }
+
+  .card-group {
+    @apply group;
+  }
+
+  .heading-gradient {
+    @apply bg-gradient-to-r from-neon-blue-light via-neon-purple-light to-neon-pink-light 
+           bg-clip-text text-transparent;
+  }
+
+  .heading-gradient-pastel {
+    @apply bg-gradient-to-r from-neon-blue-pastel via-neon-purple-pastel to-neon-pink-pastel 
+           bg-clip-text text-transparent;
+  }
+
+  .btn-gradient {
+    @apply bg-gradient-to-r from-neon-purple-light to-neon-pink-light text-white
+           hover:from-neon-purple hover:to-neon-pink transition-all duration-300;
+  }
+
+  .btn-gradient-pastel {
+    @apply bg-gradient-to-r from-neon-purple-pastel to-neon-pink-pastel text-dark-100
+           hover:from-neon-purple-light hover:to-neon-pink-light hover:text-white transition-all duration-300;
+  }
+
+  .glass-panel {
+    @apply bg-glass-card backdrop-blur-xl border border-white/10 
+           rounded-2xl shadow-glass;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-dark-200;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gradient-to-b from-neon-purple to-neon-blue rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gradient-to-b from-neon-blue to-neon-pink;
+}
+
+/* Selection color */
+::selection {
+  @apply bg-neon-purple/30 text-white;
+}
